@@ -275,7 +275,7 @@ if (windowWidth < 1080){
 
 
 
-      if(count >500) {
+      if(count >300) {
         clearInterval(main);
       }
       count ++;
