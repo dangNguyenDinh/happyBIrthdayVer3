@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+#wrapper{
+    background: url('./assetForMe/table.jpg');
+    width: 100vw;
+    height: 100vh;
+}
+.paper{
+    position: absolute;
+}
+
+#p1{
+    top: 10vh;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+#dragbook{
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
+    width: 20vw;
+    height: 30vh;
+    z-index: 1;
+    }
+#p2{
+    top: 20vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+#word{
+    position: absolute;
+    top: 42vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    display: none;
+}
+#pen{
+    position: absolute;
+    top: 30vh;
+    left: 80vw;
+    transform: rotateZ(30deg);
+    z-index: 1;
+}
+
+@keyframes wordAppear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes disappeared{
+    0%{
+        opacity: 1;
+        display: block;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+@keyframes penWrite{
+    0%{
+        top: 5vh;
+        left: 5vw;
+        opacity: 1;
+    }
+    100%{
+        top: 5vh;
+        left: 18vw;
+        opacity: 0;
+    }
+}
+@keyframes appeared{
+    0%{ 
+        opacity: 0;
+        display: none;
+    }
+    50%{
+        opacity: 0;
+        display: none;
+    }
+    100%{
+        opacity: 1;
+        display: block;
+    }
+}
+.leaf{
+    z-index: 2;
+    position: absolute;
+    width: 2vh;
+}
+
+
+
+#happy{
+    position: absolute;
+    width: 100vw;
+    top: -1vh;
+    display: none;
+}
+
+@media (max-width: 1080px) {
+    #pen{
+        position: absolute;
+        top: 30vh;
+        left: 75vw;
+        transform: rotateZ(30deg);
+        z-index: 1;
+        width: 3vh;
+    }
+    #word{
+        position: absolute;
+        top: 42vh;
+        left: 50vw;
+        transform: translateX(-50%);
+        display: none;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
